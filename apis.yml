@@ -1,8 +1,26 @@
 aid: scalyr
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/scalyr.png
 name: Scalyr
-description: Scalyr is a company surfaced as a portfolio company of bloomberg-beta, gv, susa-ventures
-  and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the
-  enrichment pipeline.
+description: Scalyr was a cloud log management, server monitoring, and observability
+  platform for engineering, DevOps, and security teams, known for an index-free,
+  columnar architecture delivering sub-second queries across hundreds of terabytes
+  of structured and unstructured log data. Founded in 2011, Scalyr was acquired by
+  SentinelOne in 2021 and rebranded as DataSet; the scalyr.com domain now redirects
+  to dataset.com. Its REST API (hosted at app.scalyr.com) covered log ingestion
+  (addEvents), querying, and account/file management via API-key authentication.
+  This profile was surfaced as a portfolio company of bloomberg-beta, gv, and
+  susa-ventures and enriched by the API Evangelist pipeline.
 url: https://raw.githubusercontent.com/api-evangelist/scalyr/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -14,9 +32,20 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
+x-rebrand:
+  successor: DataSet
+  parent: SentinelOne
+  successor_domain: https://dataset.com/
+  note: scalyr.com 302-redirects to dataset.com; brand retired post-2021 acquisition
 tags:
 - Company
+- Log Management
+- Observability
+- Monitoring
+- Log Analytics
+- DevOps
+- Security
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +53,22 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/scalyr-domain-security.yml
 - type: Website
   url: https://www.scalyr.com/
+- type: Documentation
+  url: https://app.scalyr.com/help
+- type: APIReference
+  url: https://app.scalyr.com/help/api
+- type: Pricing
+  url: https://www.dataset.com/pricing/
+- type: Blog
+  url: https://www.dataset.com/blog/
+- type: Login
+  url: https://app.scalyr.com/login
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
